@@ -1,0 +1,172 @@
+.header{
+    width: auto;
+    height: auto;
+    align-content: center;
+  }
+  .logo{
+    width: auto;
+    text-align: center;
+     margin-top: 20px;
+  }
+
+
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    width: auto;
+    margin-top:20px;
+    margin-block-end: 20px;
+  }
+  .button {
+    font-family: stencil;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex; 
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    align-content: center;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  }
+  
+  .instagram {
+    background-color: #ffffff;
+  
+  }
+  
+  .google-maps {
+    background-color: #ffffff;
+  }
+  
+  .img {
+    display: flex;
+    width: 5%;
+    height: 5%;
+    margin-right: 5px;
+    align-items: center;
+    vertical-align: middle;
+    align-content: center;
+  }
+
+
+
+
+/* Estilos del carousel */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 100%; /* Hace que el carrusel se adapte al ancho de la pantalla */
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  animation: carouselAnimation 10s linear infinite;
+  width: auto;
+  height: 400px;
+}
+
+.carousel img {
+  flex: 0 0 auto;
+  max-width: 100%;
+  height: auto; /* Para que la altura se ajuste automáticamente */
+  transition: transform 1s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes carouselAnimation {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Cambia el número de imágenes a mostrar en pantallas pequeñas */
+  .carousel {
+      animation-duration: 10s; /* Ajusta la velocidad de la animación para pantallas pequeñas */
+  }
+  }
+
+
+
+
+
+
+
+.carousel-menu{
+    display: auto;
+    transition: 0,5s;
+    position: relative;
+    width: auto;
+    max-width: 100%;
+    justify-content: center;
+    overflow: visible;
+  }
+  .carousel-slide{
+    width: 100px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    overflow:auto;
+    display: flex;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .carousel img {
+      max-height: 200px;
+    }
+  }
+   
+  .carousel-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  
+  
+  /* Estilos del footer */
+  footer{
+    font-family: stencil;
+    background-color: #3333336d;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    position: absolute;
+}
+
+.p{
+  font-family: stencil;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+
+}
+
+  
